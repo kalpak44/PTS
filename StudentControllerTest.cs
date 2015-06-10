@@ -11,8 +11,8 @@ namespace StoreTests.Controllers
           public void TestDetailsView()
           {
                var controller = new ProductController();
-               var result = controller.Details(2) as ViewResult;
-               Assert.AreEqual("Details", result.ViewName);
+               var result = controller.Index as ViewResult;
+               Assert.AreEqual("Index", result.ViewName);
 
           }
      }
